@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Userslist from "./pages/Userlist/UsersList";
 import User from "./pages/UserPage/User";
 import NewUser from "./pages/NewUser/NewUser";
+import ProductList from "./pages/ProductList/ProductList";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +29,18 @@ const router = createBrowserRouter([
         path: "/newuser",
         element: <NewUser />,
       },
+      {
+        path: "/products",
+        element: <ProductList />,
+      },
+      // {
+      //   path: "/newuser",
+      //   element: <NewUser />,
+      // },
+      // {
+      //   path: "/newuser",
+      //   element: <NewUser />,
+      // },
     ],
   },
 ]);
