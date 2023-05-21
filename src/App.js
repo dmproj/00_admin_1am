@@ -6,6 +6,7 @@ import Topbar from "./components/Topbar/Topbar";
 import Home from "./pages/Home";
 import Userslist from "./pages/Userlist/UsersList";
 import User from "./pages/UserPage/User";
+import NewUser from "./pages/NewUser/NewUser";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/user/:userId",
         element: <User />,
+      },
+      {
+        path: "/newuser",
+        element: <NewUser />,
       },
     ],
   },
