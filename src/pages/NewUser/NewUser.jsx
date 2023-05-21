@@ -21,20 +21,22 @@ const NewUser = () => {
           <label htmlFor="">username</label>
           <input type="pasword" placeholder="password" />
         </div>
-        <div className="newUserItem">
+        <div className="newUserGender">
           <label for="male">Male</label>
-          <input type="radio" placeholder="male" id="male"/>
+          <input type="radio" placeholder="male" id="male" />
           <label for="female">Female</label>
-          <input type="radio" placeholder="female" id="female"/>
+          <input type="radio" placeholder="female" id="female" />
           <label for="other"> Other</label>
           <input type="radio" id="other" placeholder="other" />
         </div>
         <div className="newUserItem">
           <label htmlFor="">Active</label>
-          <selct className="newUserSelect">
-
-          </selct>
+          <select className="newUserSelect" name="active" id="active">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
         </div>
+        <button className="newUserButton">Create</button>
       </form>
     </div>
   );
